@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head><style>
+  .Success { font-weight: bold; color: #0f0; }
+  .Error { font-weight: bold; color: #f00;
+}
+</style></head>
+
+<body onload="makeRequest();">
+
+<div id="res"></div>
+
+<script>
+var getPort = function() {
+  return window.location.port == 1729 ? 1728 : 1729;
+};
+
+var showMessage = function(msg) {
+  var elem = document.getElementById('res');
+  elem.className = msg;
+  elem.innerHTML = msg;
+};
+
+var makeRequest = function() {
+  var xhr = new XMLHttpRequest();
+  var url = 'http://localhost:' + getPort();
+  console.log('Sending cross-origin requset to ' + url);
+  xhr.open('GET', url);
+
+  xhr.onload = function() {
+    showMessage('Success');
+  };
+
+  xhr.onerror = function() {
+    showMessage('Error');
+  }
+
+  xhr.send();
+};
+</script>
+
+</body></html>
