@@ -25,7 +25,7 @@ var showMessage = function(msg) {
 var makeRequest = function() {
   var xhr = new XMLHttpRequest();
   var url = 'http://localhost:' + getPort();
-  console.log('Sending cross-origin requset to ' + url);
+  console.log('Sending cross-origin request to ' + url);
   xhr.open('GET', url);
 
   xhr.onload = function() {
