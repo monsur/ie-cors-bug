@@ -20,14 +20,14 @@ Instead, the request succeeds in IE. The request fails on all other browers.
 
 Here are screenshots of the results from various browsers under Windows 8.1.
 
-IE 11
+IE 11<br>
 ![IE 11](http://i.imgur.com/S9wJLIg.png)
 
-Chrome 35
+Chrome 35<br>
 ![Chrome 35](http://i.imgur.com/5WiLMn1.png)
 
-Firefox 30
+Firefox 30<br>
 ![Firefox 30](http://i.imgur.com/KFIJn9K.png)
 
-Opera 22
+Opera 22<br>
 ![Opera 22](http://i.imgur.com/NJGbyFy.png)
